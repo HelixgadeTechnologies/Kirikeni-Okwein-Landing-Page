@@ -16,18 +16,29 @@ import icon3 from "@/assets/icon3.png"
 import icon4 from "@/assets/icon4.png"
 import mockup2 from "@/assets/mockup-2.png"
 import Smile from "@/assets/image-smile.png"
+import playstore from "@/assets/playstore.png"
+import applestore from "@/assets/applestore.png"
+import playstore2 from "@/assets/playstore2.png"
+import applestore2 from "@/assets/applestore2.png"
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
+import { useState } from "react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const {isOpen, setIsOpen} =  useState(false)
   return (
     <>
       <NavBar />
-      <header className="md:h-[85vh] md:py-5 md:px-32 px-10 bg-[#003338] flex md:flex-row flex-col">
+      <header className="md:h-[85vh] md:py-5 md:px-32 px-10 bg-[#003338] flex md:flex-row flex-col-reverse">
         <div className="md:w-[40vw] ">
           {" "}
           <Image src={mockupheader} alt="fish icon" />
         </div>
-        <div className="md:w-[60vw] py-20">
+        <div className="md:w-[60vw] md:py-20 py-5 text-center md:text-left">
           <h1 className="md:text-7xl text-4xl text-white py-3">
             Learn Wakirike
             <br /> Language with ease
@@ -38,46 +49,30 @@ export default function Home() {
             understanding the language
           </p>
           <div className="flex items-center flex-row space-x-5 pt-10">
-            <div
-              href="#"
-              className="flex border-white border rounded items-center justify-center px-3 py-2"
-            >
-              <Image
-                src={PlayStore}
+          <Image
+                src={playstore2}
                 alt="Apple Store"
-                className=" h-6 w-6 mx-2"
+                className=" h-[50px] w-[150px] mx-2"
               />
-              <div className="text-white">
-                <p>Download on</p>
-                <p>Google Play</p>
-              </div>
-            </div>
-            <div
-              href="#"
-              className="flex border-white border rounded items-center justify-center px-3 py-2"
-            >
-              <Image
-                src={AppleIcon}
+             
+          
+             <Image
+                src={applestore2}
                 alt="Apple Store"
-                className=" h-8 w-8 mx-2"
+                className=" h-[50px] w-[150px] mx-2"
               />
-              <div className="text-white">
-                <p>Download on</p>
-                <p>Appstore</p>
-              </div>
-            </div>
           </div>
         </div>
       </header>
       <div className="md:px-40 md:py-10 bg-white py-5 px-2">
-        <h1 className="text-[#323A46] md:text-[50px] text-[40px] tracking-[-0.04em] font-semibold text-center">
+        <h1 className="text-[#323A46] md:text-[50px] text-[30px] px-10 md:px-1 tracking-[-0.04em] font-semibold md:text-left text-center">
           About Wakirike Language Platform
         </h1>
         <div className="flex flex-wrap md:flex-row items-center justify-center flex-col pt-12">
           <div className="md:w-1/2 w-[90vw] p-4 flex items-center justify-center flex-col space-y-5 md:block">
             <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon1} alt="icon1"/></div>
             <b className="text-[#1A1A1A] text-2xl">Cultural Value</b>
-            <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em]">
+            <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-center md:text-left">
               Kirikeni Okwein, a language learning platform dedicated to
               preserving and promoting the Wakirike language.Language is an
               essential part of culture, and preserving the Wakirike language is
@@ -88,21 +83,21 @@ export default function Home() {
           <div className="md:w-1/2 w-[90vw] p-4 flex items-center justify-center flex-col space-y-5 md:block">
             <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon2} alt="icon1"/></div>
             <b className="text-[#1A1A1A] text-2xl">Personalized Learnimg</b>
-            <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em]">
+            <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
             Our platform offers an interactive and user-friendly experience designed to help both beginners and advanced learners improve their Wakirike language skills.
             </p>
           </div>
           <div className="md:w-1/2 w-[90vw] p-4 flex items-center justify-center flex-col space-y-5 md:block">
             <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon3} alt="icon1"/></div>
             <b className="text-[#1A1A1A] text-2xl">Learn on the go </b>
-            <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em]">
+            <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
             Our platform is tailored to meet your needs. You can learn at your own pace, on your own schedule, and from anywhere in the world. It is available on both web and mobile devices, making it easy to learn on the go and at your own pace.
             </p>
           </div>
           <div className="md:w-1/2 w-[90vw] p-4 flex items-center justify-center flex-col space-y-5 md:block">
             <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon4} alt="icon1"/></div>
             <b className="text-[#1A1A1A] text-2xl">Simplified Learning</b>
-            <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em]">
+            <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
             Our platform is tailored to meet your needs. You can learn at your own pace, on your own schedule, and from anywhere in the world. It is available on both web and mobile devices, making it easy to learn on the go and at your own pace.
             </p>
           </div>
@@ -116,7 +111,7 @@ export default function Home() {
           <h1 className="text-[#323A46] md:text-[50px] text-[40px] text-center md:text-left tracking-[-0.04em] font-semibold">
             A better platform to Learn Wakirike
           </h1>
-          <p className="leading-[32px] tracking-[-0.02em] text-[#64748B]">
+          <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
             Learning Kirikeni Okwein is fun and effective. Our language learning
             platform is designed to help you develop real-world communication
             skills by providing quick, bite-sized lessons that are both engaging
@@ -128,57 +123,50 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="px-10 py-10 bg-white flex md:flex-row flex-col md:px-40 md:py-20">
+      <div className="px-5 py-10 bg-white flex md:flex-row flex-col md:px-40 md:py-20">
         <div className="md:w-[60%] md:pr-20">
-          <h1 className="text-[#323A46] md:text-[50px] text-[40px] text-center md:text-left tracking-[-0.04em] font-semibold">
+          <h1 className="text-[#323A46] md:text-[50px] text-[30px]  text-center md:text-left tracking-[-0.04em] font-semibold">
             Learn anytime, anywhere with Kirikeni Okwein
           </h1>
-          <p className="leading-[32px] tracking-[-0.02em] text-[#64748B]">
+          <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
             Learn without commute breaks, become more productive in your
             learning with our iPhone and Android apps. Download them and see why
             Apple and Google gave us their highest accolades.
           </p>
           <div className="flex items-center flex-cold space-x-5 pt-10">
-            <div
-              href="#"
-              className="flex border-white border border-black rounded items-center justify-center px-3 py-2"
-            >
+          
               <Image
-                src={PlayStore}
+                src={playstore}
                 alt="Apple Store"
-                className=" h-6 w-6 mx-2"
+                className=" h-[50px] w-[150px] mx-2"
               />
-              <div className="text-black">
-                <p>Download on</p>
-                <p>Google Play</p>
-              </div>
-            </div>
-            <div
-              href="#"
-              className="flex border-white border  border-black rounded items-center justify-center px-3 py-2"
-            >
-              <Image
-                src={AppleIcon}
+             
+          
+             <Image
+                src={applestore}
                 alt="Apple Store"
-                className=" h-8 w-8 mx-2"
+                className=" h-[50px] w-[150px] mx-2"
               />
-              <div className="text-black">
-                <p>Download on</p>
-                <p>Appstore</p>
-              </div>
-            </div>
           </div>
         </div>
 
-        <div className="w-[40%]">
+        <div className="w-[40%] hidden md:block">
           <Image src={mockup2} alt="fish icon" />
         </div>
       </div>
-      <div className="md:px-40 md:py-10 bg-white">
-        <h1 className="text-3xl text-bold">Comments From People</h1>
-        <div>
-        <div className="flex flex-wrap justify-center">
-          <div className="bg-white border rounded-lg overflow-hidden m-4 w-72">
+      <div className="md:px-40 md:py-10 bg-white  md:text-center md:text-left ">
+        <h1 className="text-3xl text-bold pl-4">Comments From People</h1>
+        <div className="md:hidden block">
+        <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide><div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
@@ -192,7 +180,56 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-white border rounded-lg overflow-hidden m-4 w-72">
+          </SwiperSlide>
+        <SwiperSlide> <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
+            <div className="p-4">
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
+                <div>
+                  <p className="font-bold text-gray-800">Friday Ndifreke</p>
+                  <p className="text-gray-700 text-sm">Painter</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <p className="text-gray-600 leading-[32px] tracking-[-0.02em]">
+                As a native Wakirike speaker, I was excited to see an app that was designed specifically to help non-native   learn the language. I have been using the Kirikeni Okwein app to teach my non-Wakirike speaking friends, </p>
+              </div>
+            </div>
+          </div></SwiperSlide>
+        <SwiperSlide> <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
+            <div className="p-4">
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
+                <div>
+                  <p className="font-bold text-gray-800">Ayanwu Blessing </p>
+                  <p className="text-gray-700 text-sm ">Product Designer</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <p className="text-gray-600 leading-[32px] tracking-[-0.02em]"> The app covers a wide range of language topics, from basic vocabulary to more advanced grammar concepts. The interactive features, such as quizzes and games, make learning fun and engaging.</p>
+              </div>
+            </div>
+          </div></SwiperSlide>
+       
+      </Swiper>
+        </div>
+        <div>
+        <div className="flex flex-wrap justify-center text-left hidden md:flex">
+          <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
+            <div className="p-4">
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
+                <div>
+                  <p className="font-bold text-gray-800">Ayaosi Godfrey</p>
+                  <p className="text-gray-700 text-sm">Product Manager</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <p className="text-gray-600 leading-[32px] tracking-[-0.02em]">"I have always wanted to learn the Wakirike language, but I found it difficult to find resources that were both accessible and effective. That's why I was thrilled to discover the Kirikeni Okwein app. interested in learning the language."</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
@@ -207,7 +244,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-white border rounded-lg overflow-hidden m-4 w-72">
+          <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
@@ -230,7 +267,7 @@ export default function Home() {
           <h1 className="  text-[#323A46] md:text-[50px] text-[40px] text-center md:text-left tracking-[-0.04em] font-semibold">
             Effective and Efficient courses.
           </h1>
-          <p className="text-[#64748B] leading-[32px] tracking-[-0.02em] px-5">
+          <p className="text-[#64748B] leading-[32px] tracking-[-0.02em] px-5 text-center md:text-left">
             Our courses is designed to be interactive, so you'll have plenty of
             opportunities to practice your new language skills with other
             learners and native speakers. With each lesson, you'll gain
