@@ -125,7 +125,7 @@ export default function Home() {
       </div>
       <div className="px-5 py-10 bg-white flex md:flex-row flex-col md:pl-28 md:py-10 md:pr-10">
         <div className="md:w-[60%] md:pr-20">
-          <h1 className="text-[#323A46] md:text-[50px] text-[30px] pt-20  text-center md:text-left tracking-[-0.03em] leading-[72px] font-bold">
+          <h1 className="text-[#323A46] md:text-[50px] text-[30px] pt-0 md:pt-20  text-center md:text-left tracking-[-0.03em] leading-[50px] font-bold">
             Learn anytime, anywhere with Kirikeni Okwein
           </h1>
           <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-[20px] text-center md:text-left md:pr-20">

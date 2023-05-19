@@ -9,7 +9,7 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="flex items-center justify-between text-white bg-[#003338] py-[29px] border-b border-[#00484E] md:pl-3 md:pr-[60px]">
+    <nav className="flex items-center justify-between text-white bg-[#003338] md:py-[29px] py-4 border-b border-[#00484E] md:pl-3 md:pr-[60px]">
       <div>
         <a href="/">
           <b className="md:ml-20 ml-5 text-[19px]">Kirikeni</b>
