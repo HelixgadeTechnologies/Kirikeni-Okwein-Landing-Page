@@ -33,33 +33,33 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <header className="md:h-[85vh] md:py-5 md:px-32 px-6 bg-[#003338] flex md:flex-row flex-col-reverse ">
+      <header className="md:h-[85vh] md:py-10 md:px-28 px-6 bg-[#003338] flex md:flex-row flex-col-reverse ">
         <div className="md:w-[40vw] ">
           {" "}
-          <Image src={mockupheader} alt="fish icon" />
+          <Image src={mockupheader} alt="fish icon" className="w-[350px] h-[490px]" />
         </div>
-        <div className="md:w-[60vw] md:py-20 py-5 text-center md:text-left">
-          <h1 className="md:text-7xl text-4xl text-white py-3">
+        <div className="md:w-[60vw] md:py-10 py-5 text-center md:text-left md:pl-[69px] pr-[0px]">
+          <h1 className="text-4xl font-[600] text-[#E7EAEE] py-5 md:leading-[80px] md:tracking-normal md:line-clamp-6	 md:text-[3.8rem]">
             Learn Wakirike
-            <br /> Language with ease
+             Language with ease
           </h1>
-          <p className="py-3 text-white leading-[32px] tracking-[-0.02em]">
+          <p className="py-2 pt-4 text-[#E7EAEE] leading-[25px] tracking-[-0.02em] text-[21px]">
             The free, fun and effective way to learn Wakrike language, with self
             paced and detailed learning materials you are a step away from
             understanding the language
           </p>
-          <div className="flex items-center flex-row space-x-4 pt-10">
+          <div className="flex items-center flex-row space-x-[21px] pt-10">
           <Image
                 src={playstore2}
                 alt="Apple Store"
-                className=" h-[60px] w-[165px]"
+                className=" md:h-[70px] md:w-[218px] w-[167.09px] h-[56px]"
               />
              
           
              <Image
                 src={applestore2}
                 alt="Apple Store"
-                className=" h-[60px] w-[165px]"
+                className=" md:h-[70px] md:w-[222px] w-[167.09px] h-[56px]"
               />
           </div>
         </div>
@@ -103,11 +103,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="md:px-10 md:py-10 bg-white flex flex-col md:flex-row md:px-40 md:py-20 py-10 items-center justify-center">
-        <div className="md:w-[40%]">
+      <div className="md:px-10 md:py-0 bg-white flex flex-col md:flex-row md:px-40 py-10 items-center justify-center">
+        <div className="md:w-[30%]">
           <Image src={Fish} alt="fish icon" className="w-[136.06px] h-[182px] md:w-[228px] md:h-[304.76px]"/>
         </div>
-        <div className="md:w-[60%] md:pr-20 px-5 pt-12">
+        <div className="md:w-[70%] md:pr-20 px-5 pt-2">
           <h1 className="text-[#323A46] md:text-[50px] text-[30px] text-center md:text-left tracking-[-0.04em] font-semibold">
             A better platform to Learn Wakirike
           </h1>
@@ -123,12 +123,12 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="px-5 py-10 bg-white flex md:flex-row flex-col md:px-40 md:py-20">
+      <div className="px-5 py-10 bg-white flex md:flex-row flex-col md:pl-28 md:py-10 md:pr-10">
         <div className="md:w-[60%] md:pr-20">
-          <h1 className="text-[#323A46] md:text-[50px] text-[30px]  text-center md:text-left tracking-[-0.04em] font-semibold">
+          <h1 className="text-[#323A46] md:text-[50px] text-[30px] pt-20  text-center md:text-left tracking-[-0.03em] leading-[72px] font-bold">
             Learn anytime, anywhere with Kirikeni Okwein
           </h1>
-          <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
+          <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-[20px] text-center md:text-left md:pr-20">
             Learn without commute breaks, become more productive in your
             learning with our iPhone and Android apps. Download them and see why
             Apple and Google gave us their highest accolades.
@@ -150,12 +150,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-[40%] hidden md:block">
-          <Image src={mockup2} alt="fish icon" />
+        <div className="w-[40%] hidden md:block ">
+          <Image src={mockup2} alt="fish icon" className="md:w-[537.5px] md:h-[520.44px]"/>
         </div>
       </div>
-      <div className="md:px-40 md:py-10 bg-white  md:text-center md:text-left pt-10 ">
-      <h1 className="text-[#323A46] md:text-[50px] text-[30px]  text-center md:text-left tracking-[-0.04em] font-semibold">Comments From People</h1>
+      <div className="md:px-20 md:py-10 bg-white  md:text-center md:text-left pt-10 ">
+      <h1 className="text-[#323A46] md:text-[50px] text-[30px] md:pl-5  text-center md:text-left tracking-[-0.03em] leading-[72px] font-bold">Comments From People</h1>
         <div className="md:hidden block">
         <Swiper
         slidesPerView={1}
@@ -166,7 +166,8 @@ export default function Home() {
         modules={[Pagination]}
         className="mySwiper py-10"
       >
-        <SwiperSlide><div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72 my-10">
+        <SwiperSlide>
+          <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72 h-[280px] my-8">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
@@ -181,7 +182,8 @@ export default function Home() {
             </div>
           </div>
           </SwiperSlide>
-        <SwiperSlide> <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
+        <SwiperSlide> 
+          <div className="bg-white border rounded-lg overflow-hidden m-4 h-[280px] md:w-fit my-8">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
@@ -196,7 +198,7 @@ export default function Home() {
               </div>
             </div>
           </div></SwiperSlide>
-        <SwiperSlide> <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
+        <SwiperSlide> <div className="bg-white border rounded-lg overflow-hidden m-4 h-[280px] md:w-fit my-8">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
@@ -214,8 +216,8 @@ export default function Home() {
       </Swiper>
         </div>
         <div>
-        <div className="flex flex-wrap justify-center text-left hidden md:flex">
-          <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
+        <div className="md:flex hidden text-center md:text-left">
+          <div className="bg-white border rounded-lg overflow-hidden m-4 flex-grow h-[280px]">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
@@ -229,7 +231,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
+          <div className="bg-white border rounded-lg overflow-hidden m-4 flex-grow h-[280px]">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
@@ -244,7 +246,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
+          <div className="bg-white border rounded-lg overflow-hidden m-4 flex-grow h-[280px]">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
