@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <header className="md:h-[85vh] md:py-5 md:px-32 px-10 bg-[#003338] flex md:flex-row flex-col-reverse">
+      <header className="md:h-[85vh] md:py-5 md:px-32 px-6 bg-[#003338] flex md:flex-row flex-col-reverse ">
         <div className="md:w-[40vw] ">
           {" "}
           <Image src={mockupheader} alt="fish icon" />
@@ -48,27 +48,27 @@ export default function Home() {
             paced and detailed learning materials you are a step away from
             understanding the language
           </p>
-          <div className="flex items-center flex-row space-x-5 pt-10">
+          <div className="flex items-center flex-row space-x-4 pt-10">
           <Image
                 src={playstore2}
                 alt="Apple Store"
-                className=" h-[50px] w-[150px] mx-2"
+                className=" h-[60px] w-[165px]"
               />
              
           
              <Image
                 src={applestore2}
                 alt="Apple Store"
-                className=" h-[50px] w-[150px] mx-2"
+                className=" h-[60px] w-[165px]"
               />
           </div>
         </div>
       </header>
-      <div className="md:px-40 md:py-10 bg-white py-5 px-2">
+      <div className="md:px-40 md:py-10 bg-white pt-20  px-2">
         <h1 className="text-[#323A46] md:text-[50px] text-[30px] px-10 md:px-1 tracking-[-0.04em] font-semibold md:text-left text-center">
           About Wakirike Language Platform
         </h1>
-        <div className="flex flex-wrap md:flex-row items-center justify-center flex-col pt-12">
+        <div className="flex flex-wrap md:flex-row items-center justify-center flex-col pt-5">
           <div className="md:w-1/2 w-[90vw] p-4 flex items-center justify-center flex-col space-y-5 md:block">
             <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon1} alt="icon1"/></div>
             <b className="text-[#1A1A1A] text-2xl">Cultural Value</b>
@@ -105,10 +105,10 @@ export default function Home() {
       </div>
       <div className="md:px-10 md:py-10 bg-white flex flex-col md:flex-row md:px-40 md:py-20 py-10 items-center justify-center">
         <div className="md:w-[40%]">
-          <Image src={Fish} alt="fish icon" />
+          <Image src={Fish} alt="fish icon" className="w-[136.06px] h-[182px] md:w-[228px] md:h-[304.76px]"/>
         </div>
-        <div className="md:w-[60%] md:pr-20 px-5">
-          <h1 className="text-[#323A46] md:text-[50px] text-[40px] text-center md:text-left tracking-[-0.04em] font-semibold">
+        <div className="md:w-[60%] md:pr-20 px-5 pt-12">
+          <h1 className="text-[#323A46] md:text-[50px] text-[30px] text-center md:text-left tracking-[-0.04em] font-semibold">
             A better platform to Learn Wakirike
           </h1>
           <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
@@ -133,19 +133,19 @@ export default function Home() {
             learning with our iPhone and Android apps. Download them and see why
             Apple and Google gave us their highest accolades.
           </p>
-          <div className="flex items-center flex-cold space-x-5 pt-10">
+          <div className="flex items-center flex-cold space-x-3 pt-10">
           
               <Image
                 src={playstore}
                 alt="Apple Store"
-                className=" h-[50px] w-[150px] mx-2"
+                className=" h-[60px] w-[170px] "
               />
              
           
              <Image
                 src={applestore}
                 alt="Apple Store"
-                className=" h-[50px] w-[150px] mx-2"
+                className=" h-[60px] w-[170px] "
               />
           </div>
         </div>
@@ -154,8 +154,8 @@ export default function Home() {
           <Image src={mockup2} alt="fish icon" />
         </div>
       </div>
-      <div className="md:px-40 md:py-10 bg-white  md:text-center md:text-left ">
-        <h1 className="text-3xl text-bold pl-4">Comments From People</h1>
+      <div className="md:px-40 md:py-10 bg-white  md:text-center md:text-left pt-10 ">
+      <h1 className="text-[#323A46] md:text-[50px] text-[30px]  text-center md:text-left tracking-[-0.04em] font-semibold">Comments From People</h1>
         <div className="md:hidden block">
         <Swiper
         slidesPerView={1}
@@ -164,9 +164,9 @@ export default function Home() {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper py-10"
       >
-        <SwiperSlide><div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72">
+        <SwiperSlide><div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72 my-10">
             <div className="p-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
@@ -262,9 +262,9 @@ export default function Home() {
 
         </div>
       </div>
-      <div className=" bg-white flex md:flex-row flex-col-reverse items-center justify-center md:px-40 px-1 py-5 md:py-20">
+      <div className=" bg-white flex md:flex-row flex-col-reverse items-center justify-center md:px-40 px-1 py-5 pt-10 md:py-20">
         <div className="md:w-[60%] md:pr-20">
-          <h1 className="  text-[#323A46] md:text-[50px] text-[40px] text-center md:text-left tracking-[-0.04em] font-semibold">
+          <h1 className="  text-[#323A46] md:text-[50px] text-[30px]  text-center md:text-left tracking-[-0.04em] font-semibold px-5">
             Effective and Efficient courses.
           </h1>
           <p className="text-[#64748B] leading-[32px] tracking-[-0.02em] px-5 text-center md:text-left">

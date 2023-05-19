@@ -9,7 +9,7 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="flex items-center justify-between text-white bg-[#003338] py-[20px]">
+    <nav className="flex items-center justify-between text-white bg-[#003338] py-[20px] border-b border-[#00484E]">
       <div>
         <a href="/">
           <b className="md:ml-20 ml-5">Kirikeni</b>
@@ -25,7 +25,7 @@ const NavBar = () => {
           Login
         </a>
       </div>
-      <div className="relative">
+      <div className="relative block md:hidden">
         <Image
           src={MenuIcon}
           alt="icon"
@@ -34,11 +34,11 @@ const NavBar = () => {
         />
       </div>
       {isOpen ? (
-        <div className="bg-[#00484E] h-[100px] w-[130px] px-3 absolute right-[20px] top-[65px]  rounded-lg rounded-tr-none flex flex-col space-y-2 pt-2">
-          <a className="text-gray-500 hover:text-white border-white bg-[#00A0AD] rounded p-1 text-center text-white">
+        <div className="bg-[#00484E] h-[109px] w-[130px] px-3 absolute right-[20px] top-[65px]  rounded-lg rounded-tr-none flex flex-col space-y-2 py-2">
+          <a className="text-gray-500 hover:text-white border-white bg-[#00A0AD] rounded p-1 mb-1 mt-2 text-center text-white">
             Get Started
           </a>
-          <a className="text-gray-500 hover:text-white border-white bg-[#00A0AD] rounded p-1 text-center text-white">
+          <a className="text-gray-500 hover:text-white border-white bg-[#00A0AD] rounded p-1  text-center text-white">
             Login
           </a>
         </div>
