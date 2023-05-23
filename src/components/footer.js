@@ -96,13 +96,13 @@ const Footer = () => {
            <Image
              src={playstore}
            alt="Apple Store"
-            className="md:h-[50px] md:w-[150px] w-[167.09px] h-[56px]"
+            className="md:h-[50px] md:w-[150px]  h-[56px]"
           />
 
         <Image
            src={applestore}
             alt="Apple Store"
-             className=" md:h-[50px] md:w-[150px] w-[167.09px] h-[56px]"
+             className=" md:h-[50px] md:w-[150px]  h-[56px]"
           />
         </div>
         </div>

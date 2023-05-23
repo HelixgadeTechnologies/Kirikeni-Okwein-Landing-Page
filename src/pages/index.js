@@ -48,18 +48,18 @@ export default function Home() {
             paced and detailed learning materials you are a step away from
             understanding the language
           </p>
-          <div className="flex items-center flex-row space-x-[21px] pt-10">
+          <div className="flex items-center justify-between md:justify-start flex-row space-x-[21px] pt-10">
           <Image
                 src={playstore2}
                 alt="Apple Store"
-                className=" md:h-[70px] md:w-[218px] w-[167.09px] h-[56px]"
+                className=" md:h-[70px] md:w-[218px]  h-[56px]"
               />
              
           
              <Image
                 src={applestore2}
                 alt="Apple Store"
-                className=" md:h-[70px] md:w-[222px] w-[167.09px] h-[56px]"
+                className=" md:h-[70px] md:w-[222px]  h-[56px]"
               />
           </div>
         </div>
@@ -69,11 +69,11 @@ export default function Home() {
           <h1 className="text-[#323A46] md:text-[50px] text-[30px]  md:px-1 tracking-[-0.04em] font-bold md:text-left text-center">
             About Wakirike Language Platform
           </h1>
-          <div className="flex flex-wrap md:flex-row items-center justify-center flex-col pt-5">
-            <div className="md:w-1/2 w-[90vw] py-4 flex items-center justify-center flex-col space-y-5 md:block">
+          <div className="flex flex-wrap md:flex-row items-center justify-center flex-col pt-5 space-y-10 ">
+            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-5 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon1} alt="icon1"/></div>
               <b className="text-[#1A1A1A] text-2xl">Cultural Value</b>
-              <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-center md:text-left">
+              <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-center md:text-left md:mr-5">
                 Kirikeni Okwein, a language learning platform dedicated to
                 preserving and promoting the Wakirike language.Language is an
                 essential part of culture, and preserving the Wakirike language is
@@ -81,21 +81,21 @@ export default function Home() {
                 people.{" "}
               </p>
             </div>
-            <div className="md:w-1/2 w-[90vw] p-4 flex items-center justify-center flex-col space-y-5 md:block">
+            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-5 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon2} alt="icon1"/></div>
-              <b className="text-[#1A1A1A] text-2xl">Personalized Learnimg</b>
+              <b className="text-[#1A1A1A] text-2xl ">Personalized Learnimg</b>
               <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
               Our platform offers an interactive and user-friendly experience designed to help both beginners and advanced learners improve their Wakirike language skills.
               </p>
             </div>
-            <div className="md:w-1/2 w-[90vw] p-4 flex items-center justify-center flex-col space-y-5 md:block">
+            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-5 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon3} alt="icon1"/></div>
               <b className="text-[#1A1A1A] text-2xl">Learn on the go </b>
-              <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
+              <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left md:mr-5">
               Our platform is tailored to meet your needs. You can learn at your own pace, on your own schedule, and from anywhere in the world. It is available on both web and mobile devices, making it easy to learn on the go and at your own pace.
               </p>
             </div>
-            <div className="md:w-1/2 w-[90vw] p-4 flex items-center justify-center flex-col space-y-5 md:block">
+            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-5 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon4} alt="icon1"/></div>
               <b className="text-[#1A1A1A] text-2xl">Simplified Learning</b>
               <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
@@ -104,11 +104,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="md:py-0 bg-white flex flex-col md:flex-row  py-10 items-center justify-center">
-          <div className="md:w-[30%]">
+        <div className="md:py-0 bg-white flex flex-col md:flex-row  pt-20 pb-10 md:pb-16 md:pt-5 items-center justify-center">
+          <div className="md:w-[35%] flex justify-center">
             <Image src={Fish} alt="fish icon" className="w-[136.06px] h-[182px] md:w-[228px] md:h-[304.76px]"/>
           </div>
-          <div className="md:w-[70%] md:pr-20 pt-2">
+          <div className="md:w-[65%] md:pr-20 pt-2">
             <h1 className="text-[#323A46] md:text-[50px] text-[30px] text-center md:text-left tracking-[-0.04em] font-bold">
               A better platform to Learn Wakirike
             </h1>
@@ -124,7 +124,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="py-10 bg-white flex md:flex-row flex-col  md:py-10 md:pr-10">
+        <div className="pt-20 md:pt-0 bg-white flex md:flex-row flex-col  md:py-10 md:pr-10">
           <div className="md:w-[60%] md:pr-20">
             <h1 className="text-[#323A46] md:text-[50px] text-[30px] pt-0 md:pt-20  text-center md:text-left tracking-[-0.03em] leading-[50px] font-bold">
               Learn anytime, anywhere with Kirikeni Okwein
@@ -134,19 +134,19 @@ export default function Home() {
               learning with our iPhone and Android apps. Download them and see why
               Apple and Google gave us their highest accolades.
             </p>
-            <div className="flex items-center justify-between flex-cold space-x-3 pt-10">
+            <div className="flex items-center md:justify-start justify-between flex-cold space-x-3 pt-10">
             
                 <Image
                   src={playstore}
                   alt="Apple Store"
-                  className=" h-[60px] w-[170px] "
+                  className=" h-[60px] md:w-[170px] w-full"
                 />
               
             
               <Image
                   src={applestore}
                   alt="Apple Store"
-                  className=" h-[60px] w-[170px] "
+                  className=" h-[60px] md:w-[170px] w-full "
                 />
             </div>
           </div>
@@ -267,7 +267,7 @@ export default function Home() {
         </div>
         <div className=" bg-white flex md:flex-row flex-col-reverse items-center justify-center  py-5 pt-10 md:py-20">
           <div className="md:w-[60%] md:pr-20">
-            <h1 className="  text-[#323A46] md:text-[50px] text-[30px]  text-center md:text-left tracking-[-0.04em] font-bold px-5">
+            <h1 className="  text-[#323A46] md:text-[50px] text-[30px]  text-center md:text-left tracking-[-0.04em] font-bold ">
               Effective and Efficient courses.
             </h1>
             <p className="text-[#64748B] leading-[32px] tracking-[-0.02em] pb-5 text-center md:text-left">
@@ -281,7 +281,7 @@ export default function Home() {
               want.
             </p>
           </div>
-          <div className="w-[40%]">
+          <div className="w-[40%] md:my-0 mb-7 mt-10">
             <Image src={Smile} alt="fish icon" />
           </div>
         </div>
