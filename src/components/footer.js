@@ -92,7 +92,7 @@ const Footer = () => {
                   <b className="pb-10">Okwein</b>
               </a>
               </div>
-              <div className="flex md:flex-col md:space-x-0 md:space-y-5 space-x-5">
+              <div className="flex md:flex-col md:space-x-0 md:space-y-5 space-x-5 justify-between">
            <Image
              src={playstore}
            alt="Apple Store"
@@ -106,7 +106,7 @@ const Footer = () => {
           />
         </div>
         </div>
-        <div className="flex md:space-x-[180px] space-x-[25px] px-5 md:px-0 py-10 md:py-0 flex-row">
+        <div className="flex justify-between md:space-x-[180px] space-x-[25px] px-5 md:px-0 py-10 md:py-0 flex-row">
             <div>
               <h4 className="font-bold md:text-[25px]  mb-5">About us</h4>
               <ul className="flex flex-col md:space-y-5 space-y-3">
