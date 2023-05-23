@@ -152,7 +152,7 @@ const Footer = () => {
           </div>
       </div>
       <div className="flex flex-wrap justify-center pt-5">
-        <p>Powered by <a href="www.helixgade.com" target={"_blank"}>Helixgade</a> 2023 . All rights reserved</p>
+        <p>Powered by <a href="http://www.helixgade.com" target={"_blank"}>Helixgade</a> 2023 . All rights reserved</p>
       </div>
   </footer>
   );
