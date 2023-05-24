@@ -143,14 +143,14 @@ export default function Home() {
                 <Image
                   src={playstore}
                   alt="Apple Store"
-                  className=" h-[55px] md:w-[190px] w-[44vw]"
+                  className=" h-[55px] md:w-[190px] w-[43vw]"
                 />
               
             
               <Image
                   src={applestore}
                   alt="Apple Store"
-                  className=" h-[55px] md:w-[190px] w-[44vw] "
+                  className=" h-[55px] md:w-[190px] w-[43vw] "
                 />
             </div>
           </div>
