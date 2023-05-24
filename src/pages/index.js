@@ -26,6 +26,10 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { useState } from "react";
 
+import Blessing from "@/assets/blessing.png"
+import Godfrey from "@/assets/godfrey.png"
+import Friday from "@/assets/friday.png"
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -65,14 +69,14 @@ export default function Home() {
         </div>
       </header>
       <div className="md:px-[100px] px-[20px] bg-white">
-        <div className="md:py-10 bg-white pt-20 ">
+        <div className="md:py-10 md:pt-20 bg-white pt-20 ">
           <h1 className="text-[#323A46] md:text-[50px] text-[30px]  md:px-1 tracking-[-0.04em] font-bold md:text-left text-center">
             About Wakirike Language Platform
           </h1>
-          <div className="flex flex-wrap md:flex-row items-center justify-center flex-col pt-5 space-y-10 ">
-            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-5 md:block">
+          <div className="flex flex-wrap md:flex-row items-center justify-center flex-col pt-3 space-y-10 ">
+            <div className="md:w-1/2 w-[90vw] md:mt-[40px]  flex items-center justify-center flex-col space-y-3 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon1} alt="icon1"/></div>
-              <b className="text-[#1A1A1A] text-2xl">Cultural Value</b>
+              <b className="text-[#1A1A1A] text-2xl  mt-5 block">Cultural Value</b>
               <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-center md:text-left md:mr-5">
                 Kirikeni Okwein, a language learning platform dedicated to
                 preserving and promoting the Wakirike language.Language is an
@@ -81,23 +85,23 @@ export default function Home() {
                 people.{" "}
               </p>
             </div>
-            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-5 md:block">
+            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-3 md:block" style={{paddingTop:0}}>
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon2} alt="icon1"/></div>
-              <b className="text-[#1A1A1A] text-2xl ">Personalized Learnimg</b>
-              <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
+              <b className="text-[#1A1A1A] text-2xl mt-5 block">Personalized Learnimg</b>
+              <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left pb-[31px]">
               Our platform offers an interactive and user-friendly experience designed to help both beginners and advanced learners improve their Wakirike language skills.
               </p>
             </div>
-            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-5 md:block">
+            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-3 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon3} alt="icon1"/></div>
-              <b className="text-[#1A1A1A] text-2xl">Learn on the go </b>
+              <b className="text-[#1A1A1A] text-2xl mt-5 block">Learn on the go </b>
               <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left md:mr-5">
               Our platform is tailored to meet your needs. You can learn at your own pace, on your own schedule, and from anywhere in the world. It is available on both web and mobile devices, making it easy to learn on the go and at your own pace.
               </p>
             </div>
-            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-5 md:block">
+            <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-3 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon4} alt="icon1"/></div>
-              <b className="text-[#1A1A1A] text-2xl">Simplified Learning</b>
+              <b className="text-[#1A1A1A] text-2xl  mt-5 block">Simplified Learning</b>
               <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
               Our platform is tailored to meet your needs. You can learn at your own pace, on your own schedule, and from anywhere in the world. It is available on both web and mobile devices, making it easy to learn on the go and at your own pace.
               </p>
@@ -125,7 +129,7 @@ export default function Home() {
           </div>
         </div>
         <div className="pt-20 md:pt-0 bg-white flex md:flex-row flex-col  md:py-10 md:pr-10">
-          <div className="md:w-[60%] md:pr-20">
+          <div className="md:w-[60%] md:pr-10">
             <h1 className="text-[#323A46] md:text-[50px] text-[30px] pt-0 md:pt-20  text-center md:text-left tracking-[-0.03em] leading-[50px] font-bold">
               Learn anytime, anywhere with Kirikeni Okwein
             </h1>
@@ -134,29 +138,29 @@ export default function Home() {
               learning with our iPhone and Android apps. Download them and see why
               Apple and Google gave us their highest accolades.
             </p>
-            <div className="flex items-center md:justify-start justify-between flex-cold space-x-3 pt-10">
+            <div className="flex items-center md:justify-start justify-between flex-cold space-x-2 pt-10">
             
                 <Image
                   src={playstore}
                   alt="Apple Store"
-                  className=" h-[60px] md:w-[170px] w-full"
+                  className=" h-[55px] md:w-[190px] w-[44vw]"
                 />
               
             
               <Image
                   src={applestore}
                   alt="Apple Store"
-                  className=" h-[60px] md:w-[170px] w-full "
+                  className=" h-[55px] md:w-[190px] w-[44vw] "
                 />
             </div>
           </div>
 
           <div className="w-[40%] hidden md:block ">
-            <Image src={mockup2} alt="fish icon" className="md:w-[557.5px] md:h-[500.44px]"/>
+            <Image src={mockup2} alt="fish icon" className="md:w-full md:h-[470.44px]"/>
           </div>
         </div>
         <div className=" md:py-10 bg-white  md:text-center md:text-left pt-10 ">
-        <h1 className="text-[#323A46] md:text-[50px] text-[30px] md:pl-5  text-center md:text-left tracking-[-0.03em] leading-[72px] font-bold">Comments From People</h1>
+        <h1 className="text-[#323A46] md:text-[50px] text-[30px]  text-center md:text-left tracking-[-0.03em] leading-[72px] font-bold">Comments From People</h1>
           <div className="md:hidden block">
           <Swiper
           slidesPerView={1}
@@ -171,7 +175,9 @@ export default function Home() {
             <div className="bg-white border rounded-lg overflow-hidden m-4 md:w-72 h-[280px] my-8">
               <div className="p-4">
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
+                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400">
+                  <Image src={Godfrey} alt=""/>
+                  </div>
                   <div>
                     <p className="font-bold text-gray-800">Ayaosi Godfrey</p>
                     <p className="text-gray-700 text-sm">Product Manager</p>
@@ -187,7 +193,9 @@ export default function Home() {
             <div className="bg-white border rounded-lg overflow-hidden m-4 h-[280px] md:w-fit my-8">
               <div className="p-4">
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
+                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400">
+                    <Image src={Friday} alt=""/>
+                  </div>
                   <div>
                     <p className="font-bold text-gray-800">Friday Ndifreke</p>
                     <p className="text-gray-700 text-sm">Painter</p>
@@ -202,7 +210,9 @@ export default function Home() {
           <SwiperSlide> <div className="bg-white border rounded-lg overflow-hidden m-4 h-[280px] md:w-fit my-8">
               <div className="p-4">
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
+                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400">
+                  <Image src={Blessing} alt=""/>
+                  </div>
                   <div>
                     <p className="font-bold text-gray-800">Ayanwu Blessing </p>
                     <p className="text-gray-700 text-sm ">Product Designer</p>
@@ -217,11 +227,13 @@ export default function Home() {
         </Swiper>
           </div>
           <div>
-          <div className="md:flex hidden text-center md:text-left">
-            <div className="bg-white border rounded-lg overflow-hidden m-4 flex-grow h-[280px]">
+          <div className="md:flex hidden text-center md:text-left space-x-10">
+            <div className="bg-white border rounded-lg overflow-hidden my-4 flex-grow h-[280px]">
               <div className="p-4">
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
+                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400">
+                    <Image src={Godfrey} alt=""/>
+                  </div>
                   <div>
                     <p className="font-bold text-gray-800">Ayaosi Godfrey</p>
                     <p className="text-gray-700 text-sm">Product Manager</p>
@@ -232,10 +244,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-white border rounded-lg overflow-hidden m-4 flex-grow h-[280px]">
+            <div className="bg-white border rounded-lg overflow-hidden my-4 flex-grow h-[280px]">
               <div className="p-4">
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
+                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400">
+                  <Image src={Friday} alt=""/>
+                  </div>
                   <div>
                     <p className="font-bold text-gray-800">Friday Ndifreke</p>
                     <p className="text-gray-700 text-sm">Painter</p>
@@ -247,10 +261,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-white border rounded-lg overflow-hidden m-4 flex-grow h-[280px]">
+            <div className="bg-white border rounded-lg overflow-hidden my-4 flex-grow h-[280px]">
               <div className="p-4">
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400"></div>
+                  <div className="w-10 h-10 rounded-full mr-4 bg-gray-400">
+                  <Image src={Blessing} alt=""/>
+                  </div>
                   <div>
                     <p className="font-bold text-gray-800">Ayanwu Blessing </p>
                     <p className="text-gray-700 text-sm ">Product Designer</p>
