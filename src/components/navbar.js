@@ -18,12 +18,12 @@ const NavBar = () => {
         </a>
       </div>
       <div className="hidden md:block">
-        <a className="text-gray-500 hover:text-white mr-4 border border-white bg-[#00484E] text-white py-[10px] px-[18px] rounded">
+        <Link className="text-gray-500 hover:text-white mr-4 border border-white bg-[#00484E] text-white py-[10px] px-[18px] rounded" href="/auth/signup">
           Get Started
-        </a>
-        <a className="text-gray-500 hover:text-gray-900 mr-4 border-white bg-[#fff] text-[#00484E] py-[10px] px-[18px] rounded">
+        </Link>
+        <Link className="text-gray-500 hover:text-gray-900 mr-4 border-white bg-[#fff] text-[#00484E] py-[10px] px-[18px] rounded" href="/auth/login">
           Login
-        </a>
+        </Link>
       </div>
       <div className="relative block md:hidden">
         <Image
