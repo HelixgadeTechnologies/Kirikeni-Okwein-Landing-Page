@@ -47,10 +47,8 @@ export default function Home() {
             Learn Wakirike
              Language with ease
           </h1>
-          <p className="py-2 pt-4 text-[#E7EAEE] leading-[25px] tracking-[-0.02em] text-[21px]">
-            The free, fun and effective way to learn Wakrike language, with self
-            paced and detailed learning materials you are a step away from
-            understanding the language
+          <p className="py-0 pt-1 text-[#E7EAEE] leading-[25px] tracking-[-0.02em] text-[18px]">
+          Discover the beauty and intricacy of the Wakirike language, known for its perceived difficulty even among its native speakers. Dive into the rich language and culture of the Okirika people through Kirikeniokwein. Our app offers an easy, accessible, engaging, and highly effective approach to learning Wakirike. Start your language journey today and unravel the wonders of Wakirike with Kirikeniokwein.
           </p>
           <div className="flex items-center justify-between md:justify-start flex-row space-x-[21px] pt-10">
           <Image
@@ -71,39 +69,35 @@ export default function Home() {
       <div className="md:px-[100px] px-[20px] bg-white">
         <div className="md:py-10 md:pt-20 bg-white pt-20 ">
           <h1 className="text-[#323A46] md:text-[50px] text-[30px]  md:px-1 tracking-[-0.04em] font-bold md:text-left text-center">
-            About Wakirike Language Platform
+          Why Choose Kirikeniokwein?
           </h1>
           <div className="flex flex-wrap md:flex-row items-center justify-center flex-col pt-3 space-y-10 ">
             <div className="md:w-1/2 w-[90vw] md:mt-[40px]  flex items-center justify-center flex-col space-y-3 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon1} alt="icon1"/></div>
-              <b className="text-[#1A1A1A] text-2xl  mt-5 block">Cultural Value</b>
+              <b className="text-[#1A1A1A] text-2xl  mt-5 block">Learn Anytime, Anywhere</b>
               <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-center md:text-left md:mr-5">
-                Kirikeni Okwein, a language learning platform dedicated to
-                preserving and promoting the Wakirike language.Language is an
-                essential part of culture, and preserving the Wakirike language is
-                crucial to preserving the identity and heritage of the Okirika
-                people.{" "}
+              With our mobile app and web-based platform, you can learn Wakirike at your convenience. Whether you're on the go or prefer to study from the comfort of your home, Kirikeniokwein is accessible from any device with an internet connection..{" "}
               </p>
             </div>
             <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-3 md:block" style={{paddingTop:0}}>
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon2} alt="icon1"/></div>
-              <b className="text-[#1A1A1A] text-2xl mt-5 block">Personalized Learnimg</b>
+              <b className="text-[#1A1A1A] text-2xl mt-5 block">Personalized Learning Experience</b>
               <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left pb-[31px]">
-              Our platform offers an interactive and user-friendly experience designed to help both beginners and advanced learners improve their Wakirike language skills.
+              We understand that everyone learns at their own pace. That's why Kirikeniokwein tracks your progress and provides personalized recommendations based on your strengths and areas for improvement. Maximize your learning potential with tailored lessons and activities.
               </p>
             </div>
             <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-3 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon3} alt="icon1"/></div>
-              <b className="text-[#1A1A1A] text-2xl mt-5 block">Learn on the go </b>
+              <b className="text-[#1A1A1A] text-2xl mt-5 block">Simplified Learning </b>
               <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left md:mr-5">
-              Our platform is tailored to meet your needs. You can learn at your own pace, on your own schedule, and from anywhere in the world. It is available on both web and mobile devices, making it easy to learn on the go and at your own pace.
+              Kirikeniokwein simplifies the complexities of the Wakirike language. Our app breaks it down into manageable bits, making learning easy for all levels. With a user-friendly interface and seamless navigation, you can start your Wakirike journey with just a few taps.
               </p>
             </div>
             <div className="md:w-1/2 w-[90vw]  flex items-center justify-center flex-col space-y-3 md:block">
               <div className="w-fit h-fit bg-gray-500 rounded-full "><Image src={icon4} alt="icon1"/></div>
-              <b className="text-[#1A1A1A] text-2xl  mt-5 block">Simplified Learning</b>
+              <b className="text-[#1A1A1A] text-2xl  mt-5 block">Motivation</b>
               <p className="text-[#4B5768] leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
-              Our platform is tailored to meet your needs. You can learn at your own pace, on your own schedule, and from anywhere in the world. It is available on both web and mobile devices, making it easy to learn on the go and at your own pace.
+              Our app is designed to fuel your growth by enhancing your learning habits. With a perfect blend of fun learning patterns, timely reminders, and instant feedback, we keep you motivated and help you make continuous progress. Track your journey, celebrate milestones, and witness your language skills thrive as you embark on your learning journey with us.
               </p>
             </div>
           </div>
@@ -114,29 +108,23 @@ export default function Home() {
           </div>
           <div className="md:w-[65%] md:pr-20 pt-2">
             <h1 className="text-[#323A46] md:text-[50px] text-[30px] text-center md:text-left tracking-[-0.04em] font-bold">
-              A better platform to Learn Wakirike
+            Comprehensive Curriculum
             </h1>
-            <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left">
-              Learning Kirikeni Okwein is fun and effective. Our language learning
-              platform is designed to help you develop real-world communication
-              skills by providing quick, bite-sized lessons that are both engaging
-              and effective. By breaking down the learning process into manageable
-              chunks, you'll be able to absorb new information more easily and
-              retain it for longer periods of time. As you progress through the
-              lessons, you'll earn points and badges that keep you motivated and
-              engaged.
+            <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-center md:text-left text-[16px]">
+            Our platform offers a comprehensive curriculum that covers all essential language skills, including reading, writing, listening, and speaking. Dive into audio and text-based lessons, engage in interactive activities, and test your knowledge with assessments.
+
             </p>
           </div>
         </div>
         <div className="pt-20 md:pt-0 bg-white flex md:flex-row flex-col  md:py-10 md:pr-10">
           <div className="md:w-[60%] md:pr-10">
             <h1 className="text-[#323A46] md:text-[50px] text-[30px] pt-0 md:pt-20  text-center md:text-left tracking-[-0.03em] leading-[50px] font-bold">
-              Learn anytime, anywhere with Kirikeni Okwein
+            Rich Database of Words and Phrases
+
             </h1>
-            <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-[20px] text-center md:text-left md:pr-20">
-              Learn without commute breaks, become more productive in your
-              learning with our iPhone and Android apps. Download them and see why
-              Apple and Google gave us their highest accolades.
+            <p className="leading-[32px] tracking-[-0.02em] text-[#64748B] text-[16px] text-center md:text-left md:pr-20">
+            Explore our robust database of Wakirike words and phrases, complete with definitions and pronunciation guides. Expand your vocabulary and deepen your understanding of the language with ease.
+
             </p>
             <div className="flex items-center md:justify-start justify-between flex-cold space-x-2 pt-10">
             
